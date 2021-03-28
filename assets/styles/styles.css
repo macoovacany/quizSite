@@ -1,0 +1,48 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 800;
+}
+
+.main {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.quiz {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+#quizOptions li {
+    background-color: wheat;
+    color: rgb(15, 0, 146);
+    margin: 20pt;
+    padding: 20pt;
+}
+
+#High-Scores-List li {
+    background-color: wheat;
+    color: rgb(15, 0, 146);
+    margin: 20pt;
+    padding: 20pt;
+}
+
+.quiz-progress {
+    display: inline;
+}
+
+.quiz-progress .timer {
+    width: 45%;
+}
+
+.quiz-progress .score {
+    width: 45%;
+}

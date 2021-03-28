@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <title>Javascript quiz </title>
+
+</head>
+
+<body>
+    <div class="page">
+        <nav>
+            <a id="swap-view" href="#" onclick="updateMainContent('hi-scores');">View Hi-Scores</a>
+        </nav>
+
+        <main>
+            <h1> Javascript Coding Quiz</h1>
+
+            <div class="main">
+                <section id="home">
+                    <h2> Coding Quiz Challenge </h2>
+                    <p> Try to answer the following code related questions within the time limit set. Keep in mind that incorrect answers will penalise your score time! </p>
+                    <button id="start-quiz" onclick="updateMainContent('quiz');"> Start quiz </button>
+                </section>
+
+                <div class="quiz">
+                    <section id="quiz">
+                        <p id="quizQuestion"></p>
+                        <ul id="quizOptions"></ul>
+                        <!-- no children! -->
+                        <div class="quiz-progress">
+                            <div class="timer">
+                                <p>Time remaining: <span id="timer"> </span></p>
+                            </div>
+                            <div class="score">
+                                <p>Score: <span id="score"> </span></p>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <section id="hi-scores">
+                    <h2>High Scores</h2>
+                    <ul id="High-Scores-List"></ul>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="./assets/scripts/quizQuestions.json"></script>
+<script src="./assets/scripts/script.js"></script>
+
+
+</html>

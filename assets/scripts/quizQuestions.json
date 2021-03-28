@@ -1,0 +1,51 @@
+var quizQuestions = [{
+        "question": "for(let i=0; i<10; i++) {\n//...\n}\nconsole.log(i)",
+        "options": ["0", "i is not defined", "9", "10"],
+        "answer": "i is not defined",
+    },
+    {
+        "question": "for(var i=0; i<10; i++) {\n//...\n}\nconsole.log(i)",
+        "options": ["0", "i is not defined", "9", "10"],
+        "answer": "10",
+    },
+    {
+        "question": "\"4\"+\"2\"/2",
+        "options": ["5", "41", "422", "52"],
+        "answer": "41",
+    },
+    {
+        "question": "(x => {x+2;})(\"5\")",
+        "options": ["7", "\"52\"", "undefined", ],
+        "answer": "undefined",
+    },
+
+    {
+        "question": "1/0",
+        "options": ["undefined", "Infinity", "NaN", "Nan"],
+        "answer": "Infinity",
+    },
+    {
+        "question": "(NaN===NaN) == []",
+        "options": ["true", "false"],
+        "answer": "true",
+    },
+
+    {
+        "question": "var numbers = [0, 1, 2];\nnumbers[4] = 4\nconsole.log(numbers[3])",
+        "options": ["undefined", "4", "3", "2"],
+        "answer": "undefined",
+    },
+
+    {
+        "question": "(y => (x => x+2)(y) + (x => 2*x)(y))(\"2\")",
+        "options": ["224", "8", "242", "42", "422"],
+        "answer": "224",
+    },
+
+    {
+        "question": "(y => (x => 1*x+2)(y) + (x => x+x)(y))(\"2\")",
+        "options": ["224", "8", "242", "42", "422"],
+        "answer": "422",
+    },
+
+]
